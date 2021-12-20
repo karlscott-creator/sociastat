@@ -8,7 +8,36 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h2>Sociastat</h2>
-    <span>An all-in-one dashboard for your social media analytics.</span>
+    <!-- FB SDK -->
+    <script>
+        window.fbAsyncInit = function() {
+        FB.init({
+            appId      : '{414648423683423}',
+            cookie     : true,
+            xfbml      : true,
+            version    : '{v12.0}'
+        });
+            
+        FB.AppEvents.logPageView();   
+            
+        };
+    
+        (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v12.0&appId=622250735589395&autoLogAppEvents=1" nonce="IPiDLpm5"></script>
+
+<div>
+    <h1>Sociastat</h1>
+</div>
+
+<div class="fb-login-button" data-width="" data-size="large" data-button-type="continue_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false"></div>
 </body>
 </html>
