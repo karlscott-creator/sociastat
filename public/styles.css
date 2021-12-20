@@ -7,6 +7,26 @@
     margin-bottom: 20px;
 }
 
+.logo h1{
+    font-size: 50px;
+}
+
 #profile{
     display:none;
+}
+
+.d-flex{
+    margin-left: 300px;
+}
+
+.jumbotron{
+    margin-top: 20px;
+}
+
+footer{
+    margin-top: 100px;
+}
+
+.list-group{
+    margin-top: 20px;
 }
